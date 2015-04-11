@@ -93,7 +93,7 @@ stylus:
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:okcjs/thunderplains-hexo.git
+  repo: git@github.com:techlahoma/thunderplains-2015.git
   branch: gh-pages
   ignore_errors: true
 
