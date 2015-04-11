@@ -9,7 +9,7 @@
 
 
 The site:
-##:zap: [Thunder Plains 2014](http://2015.thunderplainsconf.com) :zap:##
+##:zap: [Thunder Plains 2015](http://2015.thunderplainsconf.com) :zap:##
 
 ### :speaker: Call for Papers!!!
 
