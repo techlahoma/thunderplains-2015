@@ -1,0 +1,11 @@
+extends base
+
+prepend window_title
+
+  = page.title
+   | &mdash;
+
+append content
+  .page(class=page.layout)
+
+    != page.content

@@ -1,0 +1,602 @@
+
+@import 'bootstrap/bootstrap'
+@import 'animation'
+@import 'settings'
+@import 'mixins'
+body
+  background: $background
+  font-family: $font-body
+  font-weight: 100
+  color: $blue-dark
+  font-size: 25px
+  line-height: 40px
+  text-align: center
+  cursor: default
+  @media only screen and (max-width: $break-small)
+    font-size: 16px
+    line-height: 20px
+html, body
+  height: 100%
+  min-height: 100%
+#content
+  //background: url("../images/test-grid.png")
+// Typography
+h1, h2, h3, h4
+  margin: 0 0 20px
+  @media only screen and (max-width: $break-small)
+    margin-bottom: 10px
+h2
+  font-family: $font-headers
+  text-transform: uppercase
+h3
+  font-family: $font-subheaders
+a, a:hover
+  cursor: pointer
+  color: $blue-light
+  text-decoration: none
+sup
+  font-size: 0.6em
+img
+  max-width: 100%
+// Elements
+section
+  clear: both
+  padding: 100px 0
+.container
+  @media only screen and (max-width: $break-small)
+    padding: 50px 20px
+.section-title
+  font-size: 50px
+  line-height: 60px
+  margin: 0 0 20px
+  font-family: $font-headers
+  color: $purple-light
+  @media only screen and (max-width: $break-small)
+    font-size: 25px
+    line-height: 30px
+    margin-bottom: 10px
+.list-simple
+  margin: 0
+  padding: 0
+  list-style: none
+.list-inline
+  @extend .list-simple
+  li
+    display: inline-block
+// Sections
+header
+  background: $blue-dark url("../images/header-gradient.png") center bottom repeat-x
+  background-attachment: fixed
+  height: 100%
+  color: white
+  position: relative
+  z-index: 1
+  @media only screen and (max-width: $break-small)
+    background-size: 1px 500px
+    background-attachment: scroll
+  .buildings
+    background: url("../images/header-bg.png") bottom center no-repeat
+    background-attachment: fixed
+    height: 100%
+    overflow: auto
+    @media only screen and (max-width: $break-small)
+      background-size: 1100px 500px
+      background-attachment: scroll
+  .intro
+    position: absolute
+    width: 710px
+    top: 50%
+    margin-top: -1*185px
+    left: 50%
+    margin-left: -1*355px
+    @media only screen and (max-width: $break-small)
+      width: 355px
+      margin-left: -1*180px
+    @media only screen and (max-width: $break-small) and (orientation: landscape)
+      top: 0
+      margin-top: 10px
+  h1
+    text-replace("../images/logo-header.png", 375px, 227px)
+    margin-bottom: 20px
+    @media all and (-webkit-min-device-pixel-ratio: 1.5)
+      background-image: url("../images/logo-header@2x.png")
+      background-size: 375px 227px
+    @media only screen and (max-width: $break-small)
+      width: 188px
+      height: 113px
+      background-size: 100% 100%
+    @media only screen and (max-width: $break-small) and (orientation: landscape)
+      margin-bottom: 0
+  h2
+    font-family: $font-subheaders
+    font-size: 50px
+    text-transform: uppercase
+    line-height: 60px
+    margin-bottom: 0
+    @media only screen and (max-width: $break-small)
+      font-size: 20px
+      line-height: 30px
+  h3
+    font-family: $font-headers
+    text-transform: uppercase
+    font-size: 30px
+    line-height: 40px
+    @media only screen and (max-width: $break-small)
+      font-size: 15px
+      line-height: 15px
+  .kapow
+    text-replace("../images/kapow.png", 12px, 18px)
+    display: inline-block
+    margin: 0 10px
+    @media all and (-webkit-min-device-pixel-ratio: 1.5)
+      background-image: url("../images/kapow@2x.png")
+      background-size: 12px 18px
+  nav
+    font-size: 20px
+    line-height: 30px
+    font-family: $font-headers
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    .container
+      padding: 10px
+    ul
+      @extend .list-simple
+      margin-bottom: 10px
+      @media only screen and (max-width: $break-medium)
+        display: none
+    a, a:hover
+      color: white
+      text-transform: uppercase
+  .scroll-hint
+    text-replace("../images/chevron-down.png", 25px, 10px)
+    @media all and (-webkit-min-device-pixel-ratio: 1.5)
+      background-image: url("../images/chevron-down@2x.png")
+      background-size: 25px 10px
+#speakers
+  .speakers-list
+    @extend .list-simple
+    .speaker
+      margin-bottom: 20px
+      @media only screen and (min-width: $break-medium)
+        text-align: left
+      &.speaker-tba
+        text-align: center
+      img
+        margin-bottom: 10px
+      h3
+        font-size: 20px
+        color: $purple-dark
+        margin-bottom: 0
+      h4
+        font-size: 15px
+        color: $green-light
+        font-weight: 300
+.speakers-topics
+  @extend .list-simple
+  font-weight: 800
+  color: $purple-dark
+  text-transform: uppercase
+  margin: 25px 0 40px
+  font-size: 25px
+  line-height: 30px
+  @media only screen and (max-width: $break-small)
+    font-size: 10px
+    line-height: 20px
+    margin: 15px 0 20px
+  li
+    margin-bottom: 40px
+    img
+      display: block
+      margin: 0 auto
+    @media only screen and (max-width: $break-medium)
+      font-size: 15px
+    @media only screen and (max-width: $break-small)
+      margin-bottom: 20px
+      &.speakers-topics-api
+        margin-left: 16.6%
+#schedule
+  .schedule-legend
+    margin: 0 0 10px
+    @media only screen and (min-width: $break-medium)
+      margin-top: -1*10px
+    span
+      white-space: nowrap
+      padding: 0 10px
+      font-size: 0.8em
+      &:before
+        content: ""
+        display: inline-block
+        background: #dddddd
+        height: 1em
+        width: 1em
+        vertical-align: middle
+        margin: (-0.2em) 0.5em 0 0
+      &.legend-room1
+        &:before
+          background: $purple-dark
+        &:hover:before
+          background: saturate($purple-dark, $hoverSaturate)
+      &.legend-room2
+        &:before
+          background: $purple-light
+        &:hover:before
+          background: saturate($purple-light, $hoverSaturate)
+      &.legend-room3
+        &:before
+          background: $orange
+        &:hover:before
+          background: saturate($orange, $hoverSaturate)
+  .schedule-list
+    @extend .list-simple
+    border: 1px solid $creme
+    background: white
+    text-align: left
+    .schedule-time
+      font-size: 12px
+      line-height: 1em
+      padding: 5px 10px
+      text-align: center
+      text-transform: uppercase
+      background: $creme
+      time
+        display: block
+    .schedule-slot
+      @extend .clearfix
+                                          
+    .schedule-event
+      @extend .clearfix
+      clear: both
+      padding: 10px
+      background: mix(white, $background)
+      text-align: center
+      p
+        font-size: 15px
+        line-height: 1em
+        text-transform: uppercase
+        font-weight: 700
+        color: $green-light
+        margin: 0
+                                          
+    .schedule-keynote
+      clear: both
+      padding: 10px
+      background: mix(white, $background)
+      text-align: center
+      border-left: 5px solid $purple-light
+      transition: all $hoverReactSpeed linear
+      &:hover
+          border-left-color: saturate($purple-light, $hoverSaturate)
+          background-color:  desaturate(lighten($purple-light, $hoverBackgroundLighten), $hoverDesaturateBack)
+          .schedule-title h3
+            color: saturate(darken($purple-light, $hoverDarkenFont), $hoverSaturateFont)
+            text-shadow: $hoverTextShadow
+      p
+        font-size: 15px
+        line-height: 1em
+        text-transform: uppercase
+        font-weight: 700
+        color: $green-light
+        margin: 0
+      .schedule-talk
+        border: none
+        padding: 0 10px
+        .schedule-title
+          h3
+            font-size: 25px
+            margin-top: 10px
+          h4
+            font-size: 20px
+    .schedule-talk
+      cursor: pointer
+      border-left: 5px solid $creme
+      padding: 15px 20px 15px 10px
+      transition: all $hoverReactSpeed ease
+      &.schedule-room1
+        border-left-color: $purple-dark
+        &:hover
+        &.hover
+          border-left-color: saturate($purple-dark, $hoverSaturate)
+          background-color:  desaturate(lighten($purple-dark, $hoverBackgroundLighten), $hoverDesaturateBack)
+          .schedule-title h3
+            color: saturate(darken($purple-dark, $hoverDarkenFont), $hoverSaturateFont)
+            text-shadow: $hoverTextShadow
+      &.schedule-room2
+        border-left-color: $purple-light
+        &:hover
+        &.hover
+          border-left-color: saturate($purple-light, $hoverSaturate)
+          background-color:  desaturate(lighten($purple-light, $hoverBackgroundLighten), $hoverDesaturateBack)
+          .schedule-title h3
+            color: saturate(darken($purple-light, $hoverDarkenFont), $hoverSaturateFont)
+            text-shadow: $hoverTextShadow
+      &.schedule-room3
+        border-left-color: $orange
+        &:hover
+        &.hover
+          border-left-color: saturate($orange, $hoverSaturate)
+          background-color:  desaturate(lighten($orange, $hoverBackgroundLighten), $hoverDesaturateBack)
+          .schedule-title h3
+            color: saturate(darken($orange, $hoverDarkenFont), $hoverSaturateFont)
+            text-shadow: $hoverTextShadow
+      &.no-modal
+        cursor: default
+      img, ul, p
+        display: none
+    @media only screen and (min-width: $break-medium)
+      .schedule-slot
+        .schedule-talk
+          float: left
+          width: 33.3%
+          height: 105px
+.schedule-talk
+  .schedule-title
+    h3
+      font-size: 20px
+      color: $purple-dark
+      margin-bottom: 5px
+    h4
+      font-size: 15px
+      color: $green-light
+      font-weight: 300
+      margin-bottom: 7px
+  
+  .nav-tabs
+    margin-top: -28px;
+  p
+    clear: both
+    margin-top: 10px
+    padding-top: 10px
+    font-size: 18px
+    line-height: 1.35em
+.modal
+  img
+    position: absolute
+    z-index: 2
+    top: 0
+    right: 8px
+    width: 200px
+    height: 200px
+  .schedule-talk
+    position: relative
+    z-index: 1
+    .schedule-title
+      min-height: 200px
+      padding-right: 210px
+      h3
+        font-size: 32px
+      h4
+        margin-top: 12px
+        font-size: 24px
+    p
+       font-size: 16px
+       text-align: justify;
+      
+#passes
+  .passes-list
+    @extend .list-simple
+    margin-top: -1*10px
+    @media only screen and (min-width: $break-small)
+      text-align: left
+    li
+      background: $creme
+      margin: 0 0 20px
+      position: relative
+      z-index: 1
+      overflow: hidden
+      &:before, &:after
+        content: ""
+        display: block
+        width: 60px
+        height: 60px
+        border-radius: 50%
+        background: $background
+        position: absolute
+        z-index: 1
+        top: 50%
+        margin-top: -1*30px
+      &:before
+        left: 0
+        margin-left: -1*40px
+      &:after
+        right: 0
+        margin-right: -1*40px
+      .pass-title, .pass-price
+        padding: 40px 60px
+        height: 160px
+        @media only screen and (max-width: $break-small)
+          height: 80px
+          padding: 25px
+      .pass-title
+        color: $green-light
+        h3
+          display: inline
+          margin: 0
+          text-transform: uppercase
+          font-size: 50px
+          line-height: 50px
+          margin-right: 0.25em
+          @media only screen and (max-width: $break-small)
+            font-size: 25px
+            line-height: 20px
+            display: block
+            margin-bottom: 0
+      .pass-price
+        padding: 60px
+        background: $purple-light
+        color: white
+        text-transform: uppercase
+        font-weight: 800
+        font-size: 60px
+        @media only screen and (max-width: $break-small)
+          font-size: 40px
+          line-height: 30px
+        sup
+          font-weight: 300
+          font-size: 0.5em
+          top: -1*0.7em
+          text-decoration: underline
+      &.pass-lightning .pass-price
+        background: mix($orange, white, 65%)
+      &.pass-thunder .pass-price
+        background: $orange
+      &.pass-rain .pass-price
+        background: mix($purple-dark, white, 70%)
+      &.pass-earlybird .pass-price
+        background: $orange
+      &.pass-onsite .pass-price
+        background: $purple-dark
+      &.pass-students .pass-price
+        background: mix($blue-dark, white, 70%)
+      &.pass-bulk .pass-price
+        background: $blue-dark
+      &.soldout
+        .pass-title
+          color: mix($green-light, $creme, 20%)
+        .pass-price
+          font-size: 50px
+          text-decoration: line-through
+          color: mix($purple-light, white)
+          @media only screen and (max-width: $break-small)
+            font-size: 30px
+            line-height: 30px
+        &.pass-lightning .pass-price
+          color: mix($orange, white, 25%)
+        &.pass-thunder .pass-price
+          color: mix($orange, white, 45%)
+        &.pass-rain .pass-price
+        &.pass-onsite .pass-price
+          color: mix($purple-dark, white)
+        &.pass-students .pass-price
+          color: mix($blue-dark, white)
+#sponsors
+  color: #aaaaaa
+  .sponsors-list
+    @extend .list-simple
+    overflow: hidden
+    margin: 30px 0 10px
+    font-weight: bold
+    margin-bottom: 1em
+    @media only screen and (min-width: $break-small)
+      .row
+        margin-bottom: 1em
+    .sponsor
+      img
+        max-width: 250px
+      @media only screen and (max-width: $break-small)
+        margin-bottom: 20px
+      .logo-innotech
+        text-replace("../images/logo-innotech.png", 152px, 90px)
+      // +logo-sponsor(brightbit, 10px)
+      // +logo-sponsor(sst, 18px, 230px, 58px)
+      // +logo-sponsor(swagexpert, 10px)
+      // +logo-sponsor(github, 6px)
+      // +logo-sponsor(twitter, 7px)
+      // +logo-sponsor(twilio, 7px)
+      // +logo-sponsor(mozilla, 4px)
+      // +logo-sponsor(bocoup)
+      // +logo-sponsor(roberthalf, 28px)
+      // +logo-sponsor(telogicalsystems, 0, 155px, 84px)
+      // +logo-sponsor(projekt202, 24px)
+      // +logo-sponsor(huboard, 16px)
+  a
+    color: #aaaaaa
+    font-size: 20px
+    line-height: 20px
+#location
+  .section-title
+    margin-bottom: 0
+  #map
+    width: 100%
+    height: 400px
+    margin-top: 20px
+    background: $creme
+    border-top: 2px solid $green-dark
+    border-bottom: 2px solid $green-dark
+  .hotel-note
+    font-size: 0.75em
+    margin-top: 20px
+footer
+  overflow: auto
+  .siteby
+    display: block
+    font-size: 20px
+    color: #cccccc
+    margin: 100px 0 20px
+    &:before, &:after
+      content: ""
+      display: inline-block
+      background-repeat: no-repeat
+      position: relative
+    &:before
+      width: 44px
+      height: 24px
+      top: 6px
+      background-image: url("../images/arrow-left.png")
+      @media all and (-webkit-min-device-pixel-ratio: 1.5)
+        background-image: url("../images/arrow-left@2x.png")
+        background-size: 44px 24px
+    &:after
+      width: 51px
+      height: 16px
+      top: 2px
+      background-image: url("../images/arrow-right.png")
+      @media all and (-webkit-min-device-pixel-ratio: 1.5)
+        background-image: url("../images/arrow-right@2x.png")
+        background-size: 51px 16px
+  .logo-brightbit
+    text-replace("../images/logo-brightbit-footer.png", 146px, 40px)
+    display: inline-block
+    vertical-align: middle
+    @media all and (-webkit-min-device-pixel-ratio: 1.5)
+      background-image: url("../images/logo-brightbit-footer@2x.png")
+      background-size: 146px 40px
+  .past-years
+    font-size: 12px
+.modal-open
+  overflow: auto
+.modal
+  text-align: left
+  animation(fadeIn linear 100ms 1)
+  .modal-header
+    border: none
+    height: 35px
+    padding: 10px
+  .modal-body
+    padding-top: 0
+.modal-backdrop
+  animation(fadeBackdrop linear 100ms 1)
+  background: $blue-dark
+  &.in
+    opacity: 0.8
+.tinytext
+  font-size: 0.6em
+                                                                
+.vcenter
+  div[class*='col-']
+    display: inline-block
+    vertical-align: middle
+    float: none
+  img
+    max-width: 250px
+.sponsor
+  img
+    max-width: 250px
+
+.cfp
+  background-color:#b27d97;
+  display:block;
+  color:#fff;
+  padding: 25px;
+  font-size: 45px;
+  margin: 45px auto;
+  border-radius:20px;
+  border:1px white solid;
+  text-shadow:#C17C3A 0 -1px 0;
+  width: 100%
+  &:hover
+    color: #b27d97;
+    border-color: #b27d97
+    background-color:  #fff
+                                                                  

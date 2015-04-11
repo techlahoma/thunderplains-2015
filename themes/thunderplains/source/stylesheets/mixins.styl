@@ -1,0 +1,31 @@
+text-replace($image, $width, $height)
+  margin: 0 auto
+  display: block
+  overflow: hidden
+  text-indent: 1000%
+  white-space: nowrap
+  width: $width
+  height: $height
+  background: url($image) no-repeat
+transform($args)
+  -webkit-transform: $args
+  -moz-transform: $args
+  transform: $args
+box-shadow($args)
+  -webkit-box-shadow: $args
+  -moz-box-shadow: $args
+  box-shadow: $args
+animation($args)
+  -webkit-animation: $args
+  -moz-animation: $args
+  -o-animation: $args
+  animation: $args
+logo-sponsor($logo, $top = 0, $width = 210px, $height = 58px)
+  .logo-{$logo}
+    text-replace("../images/logo-#{$logo}.png", $width, $height)
+    margin-top: $top
+    @media all and (-webkit-min-device-pixel-ratio: 1.5)
+      background-image: url("../images/logo-{$logo}@2x.png")
+      background-size: $width $height
+    @media only screen and (max-width: $break-small)
+      margin-top: 0

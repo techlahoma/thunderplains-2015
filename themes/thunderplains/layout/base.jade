@@ -1,0 +1,67 @@
+doctype html
+block vars
+  - var bodyclass = null;
+html(lang='en')
+  head
+    include _partial/head
+  body(class=bodyclass)
+    header
+      .buildings
+        .intro
+          block header
+            h1
+              a(href=config.root)
+                = config.title
+            h2
+              = config.subtitle
+            h3
+              | November 11
+              sup th
+              |  2015
+              span.kapow
+              | Oklahoma City
+            a.cfp(href="http://2013.thunderplainsconf.com/")
+              | Call For Proposals Open
+
+        nav
+          .container
+            ul.row
+              li
+              li.col-md-2
+                a(href="#schedule") Schedule
+              li.col-md-2
+                a(href="#passes") Tickets
+              li.col-md-2
+                a(href="#location") Location
+              li.col-md-3
+                a(href="#coc") Code of Conduct
+              li.col-md-2
+                a(href="#sponsors") Sponsorship
+              li.col-md-1 &#160;
+              li
+            a.scroll-hint(href="#conference")
+
+    #content
+      block content
+
+    footer
+      include _partial/footer
+
+    // Modal
+    #modal-talks.modal(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+      .modal-dialog
+        .modal-content
+          .modal-header
+            button.close(type="button", data-dismiss="modal", aria-hidden="true") &#215;
+          .modal-body
+
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-23995264-3', 'thunderplainsconf.com');
+      ga('send', 'pageview');
+    script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvbTld6AHZj_PbND6ZysGns9kXb5BBNi0&sensor=false")
+    script(src="javascripts/retina.js", type="text/javascript")
+

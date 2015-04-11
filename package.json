@@ -1,0 +1,54 @@
+{
+  "name": "thunderplains",
+  "version": "2.7.1",
+  "private": true,
+  "dependencies": {
+    "hexo": "3.x.x",
+    "hexo-deployer-git": "0.x.x",
+    "hexo-front-matter": "0.x.x",
+    "hexo-generator-archive": "0.x.x",
+    "hexo-generator-category": "0.x.x",
+    "hexo-generator-feed": "*",
+    "hexo-generator-minify": "0.x.x",
+    "hexo-generator-sitemap": "*",
+    "hexo-generator-tag": "0.x.x",
+    "hexo-pagination": "0.x.x",
+    "hexo-renderer-ejs": "*",
+    "hexo-renderer-jade": "^0.1.0",
+    "hexo-renderer-markdownjs": "0.x.x",
+    "hexo-renderer-marked": "*",
+    "hexo-renderer-stylus": "*",
+    "hexo-server": "0.x.x",
+    "hexo-tag-googlemaps": "*",
+    "hexo-util": "0.x.x"
+  },
+  "hexo": {
+    "version": "3.0.1"
+  },
+  "devDependencies": {
+    "hexo-broken-link-checker": "1.x.x",
+    "hexo-generator-minify": "0.x.x"
+  },
+  "description": "Thunder Plains Developer Conference\r -----------------------------------",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/techlahoma/thunderplains-hexo.git"
+  },
+  "keywords": [
+    "thunderplains",
+    "hexo",
+    "oklahoma",
+    "developer",
+    "conference"
+  ],
+  "author": "amanda harlin, jesse harlin, vance lucas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/techlahoma/thunderplains-hexo/issues"
+  },
+  "homepage": "https://github.com/techlahoma/thunderplains-hexo"
+}
