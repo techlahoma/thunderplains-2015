@@ -89,6 +89,16 @@ exclude_generator:
 stylus:
   compress: false
 
+optimize:
+  # Defaults
+  image_min: false
+  css_concat: true
+  css_min: true
+  js_concat: true
+  js_min: true
+  html_min: true
+  gzip: true
+
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
