@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "hexo": "3.x.x",
+    "hexo-clean-css": "0.0.2",
     "hexo-deployer-git": "0.x.x",
     "hexo-front-matter": "0.x.x",
     "hexo-generator-archive": "0.x.x",
