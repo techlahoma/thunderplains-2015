@@ -87,9 +87,9 @@
 
       transition ?
         that.$element.find('.modal-dialog') // wait for modal to slide in
-      .one($.support.transition.end, function () {
-        that.$element.focus().trigger(e)
-      })
+        .one($.support.transition.end, function () {
+          that.$element.focus().trigger(e)
+        })
         .emulateTransitionEnd(300) :
         that.$element.focus().trigger(e)
     })
@@ -125,11 +125,11 @@
   Modal.prototype.enforceFocus = function () {
     $(document)
       .off('focusin.bs.modal') // guard against infinite focus loop
-    .on('focusin.bs.modal', $.proxy(function (e) {
-      if (this.$element[0] !== e.target && !this.$element.has(e.target).length) {
-        this.$element.focus()
-      }
-    }, this))
+      .on('focusin.bs.modal', $.proxy(function (e) {
+        if (this.$element[0] !== e.target && !this.$element.has(e.target).length) {
+          this.$element.focus()
+        }
+      }, this))
   }
 
   Modal.prototype.escape = function () {
