@@ -1,11 +1,8 @@
-#Thunder Plains Developer Conference 2014
+#Thunder Plains Developer Conference 2015
 
 ![Thunderplains Banner](./readme/banner_2015.png)
 
 -----------------------------------
-
-
-
 
 
 The site:
