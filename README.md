@@ -18,3 +18,9 @@ The site:
 Located at the Cox Convention Center in downtown Oklahoma City
 
 ![Thunderplains Location](./readme/tp_locale.png)
+
+### :email: Contact Us!
+
+[Twitter - @ThunderPlains](https://twitter.com/thunderplains)
+
+[info@thunderplainsconf.com](mailto:info@thunderplainsconf.com)
