@@ -1,7 +1,7 @@
 nav#article-list-pagination
   if page.prev
     a(href=config.root + page.prev_link, title=__("prev") + ' articles')
-      | &larr; 
+      | &larr;
       = __("prev") + ' articles'
   if page.prev && page.next
     | &emsp;
