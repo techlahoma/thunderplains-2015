@@ -77,6 +77,7 @@ header
   .buildings
     background: url("../images/header-bg.jpg") bottom center no-repeat
     //background-attachment: fixed
+    background-size: cover
     height: 100%
     overflow: auto
     @media only screen and (max-width: $break-small)
@@ -89,6 +90,16 @@ header
     margin-top: -1*185px
     left: 50%
     margin-left: -1*355px
+    @media only screen and (max-height: 800px)
+      margin-top: -1*215px
+    @media only screen and (max-height: 600px)
+      margin-top: -1*250px
+      h2
+        font-size: 35px
+      h3
+        font-size: 25px
+      .cfp
+        margin: 0
     @media only screen and (max-width: $break-small)
       width: 355px
       margin-left: -1*180px
@@ -600,4 +611,6 @@ footer
     color: #b27d97;
     border-color: #b27d97
     background-color:  #fff
-                                                                  
+  @media only screen and (max-height: 800px)
+    font-size: 22px;
+    padding: 14px;
