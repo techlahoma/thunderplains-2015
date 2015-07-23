@@ -1,0 +1,18 @@
+.schedule-talk
+  .schedule-title
+    img(src="speakers/example/headshot.png", alt="Example Speaker")
+    h3 Talk Title
+    h4 Speaker Name
+    
+  ul.nav.nav-tabs(role="tablist")
+    li.nav-room1.active
+      a(role="tab", data-toggle="tab", href="#speaker-talk") Talk
+    li.nav-room1
+      a(role="tab", data-toggle="tab", href="#speaker-bio") Bio
+  div.tab-content
+    div.tab-pane.active(id="crouch-talk")
+      p
+        include description.jade
+    div.tab-pane(id="speaker-bio")
+      p
+        include bio.jade

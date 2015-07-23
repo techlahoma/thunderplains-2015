@@ -2,89 +2,23 @@ title: Developer Conference
 date: 2014-07-08 10:17:28
 ---
 
-section#conference.container
-  h2.section-title Developer Conference
-  p
-    strong Thunder Plains
-    | is a web and mobile developer conference organized by the
-    a(href="http://okcjs.com") Oklahoma City Javascript User Group
-    | . The conference
-    | focuses on JavaScript and related technologies in a wide variety of different use cases and
-    | platforms that make the web all the more interesting.
-    br
-    ul.speakers-topics.row
-      li.speakers-topics-js.col-sm-2.col-sm-offset-1.col-xs-4
-        | Javascript
-        img(src="images/speakers-topics-js.png", alt="Javascript")
-      li.speakers-topics-html.col-sm-2.col-xs-4
-        | HTML
-        img(src="images/speakers-topics-html.png", alt="HTML")
-      li.speakers-topics-css.col-sm-2.col-xs-4
-        | CSS
-        img(src="images/speakers-topics-css.png", alt="CSS")
-      li.speakers-topics-api.col-sm-2.col-xs-4
-        | APIs
-        img(src="images/speakers-topics-api.png", alt="APIs")
-      li.speakers-topics-mobile.col-sm-2.col-xs-4
-        | Mobile
-        img(src="images/speakers-topics-mobile.png", alt="Mobile")
+section#conference
+  include about-conference.jade
 
 section#sponsorship
-  h2.section-title Sponsorship Opportunity
-  .container
-    p
-      | Interested in Sponsoring Thunder Plains? Check out the
-      a(href="files/ThunderPlainsSponsorshipProspectus2015.pdf") Sponsorship Prospectus
-      | . If you have any questions, please feel free to contact us via 
-      a(href="mailto:info@thunderplainsconf.com") email
-      | or 
-      a(href="https://twitter.com/thunderplains") @ThunderPlains
-      | on twitter.
+  include sponsorship.jade
+  
+section#schedule
+  include schedule.jade
 
 section#coc
-  .container
-    h2.section-title Code of Conduct
-    p
-      | Before attending the conference,
-      a(href="https://github.com/techlahoma/CodeofConduct/wiki/Techlahoma-Code-of-Conduct") please review the Thunder Plains Code of Conduct
-      | . The CoC applies to all attendees, speakers, volunteers, and vendors
-      | at official and unofficial events by
-      a(href="http://techlahoma.org/") Techlahoma
-      | and any location
-      | where attendees may be congregating.
-      a(href="mailto:info@thunderplainsconf.com") Contact us
-      | if you have questions.
+  include code-of-conduct.jade
 
 section#location
-  .container
-    h2.section-title Where it&#8217;s at
-    p
-      | Located at the
-      a(href="http://www.coxconventioncenter.com/") Cox Convention Center
-      |  in downtown Oklahoma City
-      br
-      | within walking distance of great hotels and restaurants.
-  iframe(width='100%', height='400px', frameBorder='0',  src='https://a.tiles.mapbox.com/v4/dclark.mna459o6/attribution,zoompan,geocoder,share.html?access_token=pk.eyJ1IjoiZGNsYXJrIiwiYSI6IkNYd01vRzgifQ.EBgXM0JReblZJXJkgcgiEA', id='map')
+  include location.jade
   
 section#videos
-  .container
-    h2.section-title Videos
-    p
-     | Check out some videos from last year
-     | Thunder Plains 2014
-     .videoplayer
-       iframe(src="https://www.youtube.com/embed/videoseries?list=PLdW0ayjzW_LCC4wYjQkivRl8QK4EvZ3i_", frameborder="0", allowfullscreen)
-
+  include videos.jade
+  
 section#tickets
-  .container
-    h2.section-title Tickets
-    p
-     | Tickets will be on sale after the CFP closes!
-     
-section#contact
-  .container
-    h2.section-title Contact Us
-    a(href="mailto:info@thunderplainsconf.com") Email Us!
-    p
-     | or
-    a(href="https://twitter.com/thunderplains") @ThunderPlains
+  include tickets.jade
