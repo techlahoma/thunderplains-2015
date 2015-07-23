@@ -1,0 +1,18 @@
+.schedule-talk
+  .schedule-title
+    img(src="speakers/example/headshot.png", alt="Pawel Szymczykowski")
+    h3 JS in Near Space
+    h4 Pawel Szymczykowski
+    
+  ul.nav.nav-tabs(role="tablist")
+    li.nav-room1.active
+      a(role="tab", data-toggle="tab", href="#Szymczykowski-talk") Talk
+    li.nav-room1
+      a(role="tab", data-toggle="tab", href="#Szymczykowski-bio") Bio
+  div.tab-content
+    div.tab-pane.active(id="Szymczykowski-talk")
+      p
+        include description.jade
+    div.tab-pane(id="Szymczykowski-bio")
+      p
+        include bio.jade

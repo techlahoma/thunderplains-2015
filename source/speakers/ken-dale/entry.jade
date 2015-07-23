@@ -1,0 +1,18 @@
+.schedule-talk
+  .schedule-title
+    img(src="speakers/example/headshot.png", alt="Ken Dale")
+    h3 Writing Better jQuery infused Javascript
+    h4 Ken Dale
+    
+  ul.nav.nav-tabs(role="tablist")
+    li.nav-room1.active
+      a(role="tab", data-toggle="tab", href="#Dale-talk") Talk
+    li.nav-room1
+      a(role="tab", data-toggle="tab", href="#Dale-bio") Bio
+  div.tab-content
+    div.tab-pane.active(id="Dale-talk")
+      p
+        include description.jade
+    div.tab-pane(id="Dale-bio")
+      p
+        include bio.jade

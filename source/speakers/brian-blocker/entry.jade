@@ -1,0 +1,18 @@
+.schedule-talk
+  .schedule-title
+    img(src="speakers/example/headshot.png", alt="Brian Blocker")
+    h3 Not Rewriting Your Web App (at once)
+    h4 Brian Blocker
+    
+  ul.nav.nav-tabs(role="tablist")
+    li.active
+      a(role="tab", data-toggle="tab", href="#brian-blocker-talk") Talk
+    li.room1
+      a(role="tab", data-toggle="tab", href="#brian-blocker-bio") Bio
+  div.tab-content
+    div.tab-pane.active(id="brian-blocker-talk")
+      p
+        include description.jade
+    div.tab-pane(id="brian-blocker-bio")
+      p
+        include bio.jade

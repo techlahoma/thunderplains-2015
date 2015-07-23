@@ -1,0 +1,18 @@
+.schedule-talk
+  .schedule-title
+    img(src="speakers/example/headshot.png", alt="Jonathan Yarbor")
+    h3 Using Node.js to Build your Transport Layer
+    h4 Jonathan Yarbor
+    
+  ul.nav.nav-tabs(role="tablist")
+    li.nav-room1.active
+      a(role="tab", data-toggle="tab", href="#Yarbor-talk") Talk
+    li.nav-room1
+      a(role="tab", data-toggle="tab", href="#Yarbor-bio") Bio
+  div.tab-content
+    div.tab-pane.active(id="Yarbor-talk")
+      p
+        include description.jade
+    div.tab-pane(id="Yarbor-bio")
+      p
+        include bio.jade

@@ -1,0 +1,18 @@
+.schedule-talk
+  .schedule-title
+    img(src="speakers/example/headshot.png", alt="Lin Clark")
+    h3 The future of front-end with npm
+    h4 Lin Clark
+    
+  ul.nav.nav-tabs(role="tablist")
+    li.nav-room1.active
+      a(role="tab", data-toggle="tab", href="#Clark-talk") Talk
+    li.nav-room1
+      a(role="tab", data-toggle="tab", href="#Clark-bio") Bio
+  div.tab-content
+    div.tab-pane.active(id="Clark-talk")
+      p
+        include description.jade
+    div.tab-pane(id="Clark-bio")
+      p
+        include bio.jade

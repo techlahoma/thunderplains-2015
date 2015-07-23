@@ -1,0 +1,18 @@
+.schedule-talk
+  .schedule-title
+    img(src="speakers/example/headshot.png", alt="Matt Steele")
+    h3 Get to the CHOPVAR: Writing an ArnoldC-to-Javascript compiler in Javascript
+    h4 Matt Steele
+    
+  ul.nav.nav-tabs(role="tablist")
+    li.nav-room1.active
+      a(role="tab", data-toggle="tab", href="#Steele-talk") Talk
+    li.nav-room1
+      a(role="tab", data-toggle="tab", href="#Steele-bio") Bio
+  div.tab-content
+    div.tab-pane.active(id="Steele-talk")
+      p
+        include description.jade
+    div.tab-pane(id="Steele-bio")
+      p
+        include bio.jade

@@ -1,0 +1,18 @@
+.schedule-talk
+  .schedule-title
+    img(src="speakers/example/headshot.png", alt="Blaine Bubblitz")
+    h3 Maybe We Should Slow Down
+    h4 Blaine Bubblitz
+    
+  ul.nav.nav-tabs(role="tablist")
+    li.nav-room1.active
+      a(role="tab", data-toggle="tab", href="#bubblitz-talk") Talk
+    li.nav-room1
+      a(role="tab", data-toggle="tab", href="#bubblitz-bio") Bio
+  div.tab-content
+    div.tab-pane.active(id="bubblitz-talk")
+      p
+        include description.jade
+    div.tab-pane(id="bubblitz-bio")
+      p
+        include bio.jade

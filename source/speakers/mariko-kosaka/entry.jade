@@ -1,0 +1,18 @@
+.schedule-talk
+  .schedule-title
+    img(src="speakers/example/headshot.png", alt="Mariko Kosaka")
+    h3 World Wide Web Without …English
+    h4 Mariko Kosaka
+    
+  ul.nav.nav-tabs(role="tablist")
+    li.nav-room1.active
+      a(role="tab", data-toggle="tab", href="#Kosaka-talk") Talk
+    li.nav-room1
+      a(role="tab", data-toggle="tab", href="#Kosaka-bio") Bio
+  div.tab-content
+    div.tab-pane.active(id="Kosaka-talk")
+      p
+        include description.jade
+    div.tab-pane(id="Kosaka-bio")
+      p
+        include bio.jade

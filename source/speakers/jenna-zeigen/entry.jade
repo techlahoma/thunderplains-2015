@@ -1,0 +1,18 @@
+.schedule-talk
+  .schedule-title
+    img(src="speakers/example/headshot.png", alt="Jenna Zeigen")
+    h3 Server Farm to Table (Or How the Internet Works)
+    h4 Jenna Zeigen
+    
+  ul.nav.nav-tabs(role="tablist")
+    li.nav-room1.active
+      a(role="tab", data-toggle="tab", href="#Zeigen-talk") Talk
+    li.nav-room1
+      a(role="tab", data-toggle="tab", href="#Zeigen-bio") Bio
+  div.tab-content
+    div.tab-pane.active(id="Zeigen-talk")
+      p
+        include description.jade
+    div.tab-pane(id="Zeigen-bio")
+      p
+        include bio.jade
