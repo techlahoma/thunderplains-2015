@@ -1,0 +1,18 @@
+.schedule-talk.schedule-room1
+  .schedule-title
+    img(src="speakers/jakub-jedryszek/headshot.png", alt="Jakrub Jedryszek")
+    h3 Aurelia – Nex Gen js framework
+    h4 Jakrub Jedryszek
+    
+  ul.nav.nav-tabs(role="tablist")
+    li.nav-room1.active
+      a(role="tab", data-toggle="tab", href="#Jedryszek-talk") Talk
+    li.nav-room1
+      a(role="tab", data-toggle="tab", href="#Jedryszek-bio") Bio
+  div.tab-content
+    div.tab-pane.active(id="Jedryszek-talk")
+      p
+        include description.jade
+    div.tab-pane(id="Jedryszek-bio")
+      p
+        include bio.jade
