@@ -1,0 +1,18 @@
+.schedule-talk
+  .schedule-title
+    img(src="speakers/example/headshot.png", alt="Jonathan David Dalton")
+    h3 Unorthodox Performance
+    h4 Jonathan David Dalton
+    
+  ul.nav.nav-tabs(role="tablist")
+    li.nav-room1.active
+      a(role="tab", data-toggle="tab", href="#Dalton-talk") Talk
+    li.nav-room1
+      a(role="tab", data-toggle="tab", href="#Dalton-bio") Bio
+  div.tab-content
+    div.tab-pane.active(id="Dalton-talk")
+      p
+        include description.jade
+    div.tab-pane(id="Dalton-bio")
+      p
+        include bio.jade
