@@ -1,4 +1,4 @@
-$(function () {
+$(function() {
   initModals();
   initTabs();
   initSmoothScroll();
@@ -15,7 +15,7 @@ function initTabs() {
 
 function initSmoothScroll() {
   // Smooth Scroll
-  $('a[href*=#]:not([href=#])').click(function () {
+  $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
       var target = $(this.hash);
@@ -34,8 +34,8 @@ function initSmoothScroll() {
 function initModals() {
   function deployModal() {
 
-    function toggleTab(e) {
-      e.preventDefault();
+    function toggleTab(eve) {
+      eve.preventDefault();
 
       $modal
         .find('.tab-pane')
@@ -60,6 +60,10 @@ function initModals() {
       .modal();
 
     $modal
+      .find('.modal-dialog')
+      .addClass('modal-lg')
+
+    $modal
       .find('.modal-body')
       .html($talk);
 
@@ -67,7 +71,9 @@ function initModals() {
       .find('.nav-tabs a')
       .click(toggleTab);
   }
-  $('.schedule-talk:not(".no-modal")').on("click", deployModal);
+
+  $('.schedule-talk:not(".no-modal")')
+    .on("click", deployModal);
 }
 
 
