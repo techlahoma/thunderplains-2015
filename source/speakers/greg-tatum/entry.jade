@@ -1,0 +1,18 @@
+.schedule-talk.schedule-room1
+  .schedule-title
+    img(src="speakers/greg-tatum/headshot.png", alt="Greg Tatum")
+    h3 WebGL Now and Future
+    h4 Greg Tatum
+    
+  ul.nav.nav-tabs(role="tablist")
+    li.nav-room1.active
+      a(role="tab", data-toggle="tab", href="#tatum-talk") Talk
+    li.nav-room1
+      a(role="tab", data-toggle="tab", href="#tatum-bio") Bio
+  div.tab-content
+    div.tab-pane.active(id="tatum-talk")
+      p
+        include description.jade
+    div.tab-pane(id="tatum-bio")
+      p
+        include bio.jade

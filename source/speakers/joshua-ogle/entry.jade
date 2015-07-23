@@ -1,0 +1,18 @@
+.schedule-talk.schedule-room2
+  .schedule-title
+    img(src="speakers/joshua-ogle/headshot.png", alt="Joshua Ogle")
+    h3 Rapid Prototyping with Product Design Sprints
+    h4 Joshua Ogle
+    
+  ul.nav.nav-tabs(role="tablist")
+    li.nav-room1.active
+      a(role="tab", data-toggle="tab", href="#Ogle-talk") Talk
+    li.nav-room1
+      a(role="tab", data-toggle="tab", href="#Ogle-bio") Bio
+  div.tab-content
+    div.tab-pane.active(id="Ogle-talk")
+      p
+        include description.jade
+    div.tab-pane(id="Ogle-bio")
+      p
+        include bio.jade

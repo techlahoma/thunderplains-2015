@@ -24,7 +24,7 @@
 .modal
   display: none;
   overflow: auto;
-  overflow-y: scroll;
+  overflow-y: auto;
   position: fixed;
   top: 0;
   right: 0;
@@ -126,17 +126,16 @@
 }
 
 // Scale up the modal
-@media $media-screen-min-tablet {
-
-  .modal-dialog {
+@media $media-screen-min-tablet
+  .modal-dialog
     left: 50%;
     right: auto;
     width: 600px;
     padding-top: 30px;
     padding-bottom: 30px;
-  }
-  .modal-content {
-    box-shadow 0 5px 15px rgba(0,0,0,.5);
-  }
+    &.modal-lg
+      width: 64%
+      left: 12%
 
-}
+  .modal-content
+    box-shadow 0 5px 15px rgba(0,0,0,.5);

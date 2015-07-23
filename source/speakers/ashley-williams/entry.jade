@@ -1,0 +1,18 @@
+.schedule-talk
+  .schedule-title
+    img(src="speakers/ashley-williams/headshot.png", alt="Ashley Williams")
+    h3 If you wish to learn ES6/2015 from scratch, you must first invent the universe 
+    h4 Ashley Williams
+    
+  ul.nav.nav-tabs(role="tablist")
+    li.nav-room1.active
+      a(role="tab", data-toggle="tab", href="#williams-talk") Talk
+    li.nav-room1
+      a(role="tab", data-toggle="tab", href="#williams-bio") Bio
+  div.tab-content
+    div.tab-pane.active(id="williams-talk")
+      p
+        include description.jade
+    div.tab-pane(id="williams-bio")
+      p
+        include bio.jade
