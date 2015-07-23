@@ -362,7 +362,7 @@ header
             text-shadow: $hoverTextShadow
       &.no-modal
         cursor: default
-      img, ul, p
+      img, ul, p, .modal-social
         display: none
     @media only screen and (min-width: $break-medium)
       .schedule-slot
@@ -383,7 +383,7 @@ header
       margin-bottom: 7px
 
   .nav-tabs
-    margin-top: -8px;
+    //margin-top: -8px;
   p
     clear: both
     margin-top: 10px
@@ -395,6 +395,10 @@ header
       display: block
       margin: 0.5em
 .modal
+  .modal-social
+    margin: 0.5em, 0
+    font-size: 0.8em
+    line-height: 1.35em
   img
     position: absolute
     z-index: 2
