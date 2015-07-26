@@ -404,19 +404,53 @@ header
     z-index: 2
     top: 0
     right: 8px
-    width: 200px
-    height: 200px
+    width: 100px
+    height: 100px
+    @media screen and (min-width: 480px)
+      width: 150px
+      height: 150px
+    @media screen and (min-width: 540px)
+      width: 175px
+      height: 175px
+    @media screen and (min-width: 720px)
+      width: 200px
+      height: 200px
+
   .schedule-talk
     position: relative
     z-index: 1
     .schedule-title
-      min-height: 200px
-      padding-right: 210px
+      min-height: 100px
+      padding-right: 110px
       h3
-        font-size: 32px
+        font-size: 18px
       h4
-        margin-top: 12px
-        font-size: 24px
+        margin-top: 7px
+        font-size: 14px
+      @media screen and (min-width: 480px)
+        min-height: 150px
+        padding-right: 160px
+        h3
+          font-size: 24px
+        h4
+          margin-top: 9px
+          font-size: 18px
+      @media screen and (min-width: 540px)
+        min-height: 175px
+        padding-right: 185px
+        h3
+          font-size: 28px
+        h4
+          margin-top: 11px
+          font-size: 22px
+      @media screen and (min-width: 720px)
+        min-height: 205px
+        padding-right: 210px
+        h3
+          font-size: 34px
+        h4
+          margin-top: 13px
+          font-size: 26px
     p
        font-size: 16px
        text-align: justify;
