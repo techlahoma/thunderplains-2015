@@ -50,7 +50,7 @@ function initModals() {
 
       $modal
         .find($(this).attr('href'))
-        .slideDown();
+        .fadeIn(250);
     }
 
     var $talk = $(this).clone(),
