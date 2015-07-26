@@ -28,6 +28,28 @@ Located at the Cox Convention Center in downtown Oklahoma City
 
 ![Thunderplains Location](./readme/tp_locale.png)
 
+### :calendar: Speaker Lineup
+
+Speaker               | Topic                                                                          | Room            | Time    | Video
+--------------------- | ------------------------------------------------------------------------------ | --------------- | ------- | --------------
+Ashley Williams       | If you wish to learn ES6/2015 from scratch, you must first invent the universe | opening keynote | 9:00am  | :movie_camera:
+Blaine Bubblitz       | Maybe We Should Slow Down                                                      | 10              | 3:30pm  | :movie_camera:
+Brian Blocker         | Not Rewriting Your Web App (at once)                                           | 8               | 1:00pm  | :movie_camera:
+Greg Tatum            | WebGL Now and Future                                                           | 8               | 9:30am  | :movie_camera:
+                      |                                                                                | 8               | 10:30   | :movie_camera:
+Jenna Zeigen          | Server Farm to Table (Or How the Internet Works)                               | 10              | 9:30am  | :movie_camera:
+Jonathan-David Dalton | Unorthodox Performance                                                         | 10              | 1:00pm  | :movie_camera:
+Jonathan Yarbor       | Using Node.js to Build your Transport Layer                                    | 9               | 9:30am  | :movie_camera:
+Jordan Garcia         | Building Games with React + Immutable + Flux                                   | 10              | 10:30am | :movie_camera:
+Joshua Ogle           | Rapid Prototyping with Product Design Sprints                                  | 9               | 10:30am | :movie_camera:
+Ken-Dale              | Writing Better jQuery infused Javascript                                       | 8               | 1:30pm  | :movie_camera:
+Kyle-Simpson          | Breaking The Broken Web                                                        | keynote         | 4:30pm  | :movie_camera:
+                      |                                                                                | 8               | 2:00pm  | :movie_camera:
+Mariko Kosaka         | World Wide Web Without …English                                                | 10              | 2:00pm  | :movie_camera:
+Matt Steele           | Get to the CHOPVAR: Writing an ArnoldC-to-Javascript compiler in Javascript    | 9               | 2:00pm  | :movie_camera:
+Matthew Podwysocki    | Async Javascript Netflix, Microsoft and the World!                             | 9               | 3:30pm  | :movie_camera:
+Pawel Szymczykowski   | JS in Near Space                                                               | 9               | 1:00pm  | :movie_camera:
+
 ### :raised_hands: Scholarship Opportunities
 Everyone should have the opportunity to learn and grow, so we're offering 10 scholarships to attend Thunder Plains.
 
