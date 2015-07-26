@@ -1,12 +1,9 @@
 .tito-wrapper
-  border 1px solid #ccc
-  border-radius 3px
-  background #f1f1f1
-  font-family sans-serif
-  color #333
+  background $background
+  font-family $font-body
+  color $blue-dark
   margin 20px auto
-  max-width 900px
-  padding 10px 10px 0 10px
+  max-width: 1024px
   width 100%
 
 .tito-ticket-list
@@ -20,26 +17,46 @@
 .tito-ticket-list.tito-ticket-waitlist
   margin 0
 
+$divider = 1px solid #ccc
+$entryHeight = 60px
+$tail-width = $entryHeight * 3
+$tail-width-small = $entryHeight * 2
+$calculated-padding = ($entryHeight - $font-size-body) * 0.5
+
 .tito-ticket
   display table-row
+  height $entryHeight
   &.tito-locked-ticket
     & > div
       padding 10px 0
 
+
 .tito-ticket-name-wrapper
-  border-bottom 1px solid #ccc
-  display table-cell
+  height $entryHeight
+  border-bottom $divider
+  display: table-cell
+  font-family: $font-headers
   vertical-align middle
+  text-align left
+  line-height: 100%
+  padding: 4px
+  label
+    margin-top: 16px
+
   .tito-tickets-remaining
-    background #ddd
-    border 1px solid rgba(51, 51, 51, 0.2)
-    color #333
-    font-size 10px
-    padding 2px 5px
+    background $creme
+    color $blue-dark
+    font-size 16px
+    padding 4px 6px
     position relative
-    top -3px
-    margin-left 10px
+    top -4px
+    margin-left 16px
     white-space nowrap
+    @media only screen and (max-width: $break-small)
+      font-size 12px
+      padding: 2px 3px
+      margin 2px
+      position: static
 
 .tito-ticket-name
   .label
@@ -56,34 +73,68 @@
       text-transform uppercase
 
 .tito-ticket-description
-  margin-top 0.2rem
-  font-size 0.7rem
+  font-size 16px
+  color: #7c8079
+  @media only screen and (max-width: $break-small)
+    font-size 12px
 
 .tito-ticket-price-quantity-wrapper,
 .tito-ticket-status,
 .tito-ticket-status-sold-out
-  border-bottom 1px solid #ccc
+  border-bottom $divider
   display table-cell
   text-align right
   vertical-align middle
+  width: $tail-width
+  @media only screen and (max-width: $break-small)
+    width: $tail-width-small
 
 .tito-ticket-price,
 .tito-ticket-quantity
+  height $entryHeight
   display inline-block
+  float: right
+  line-height: 100%
+  vertical-align middle
+  @media only screen and (max-width: $break-small)
+    line-height: inherit
+.tito-ticket-quantity
+    padding 0
+    span
+      display: inline-block
+      float: left
+      font-size: $entryHeight * 0.5
+      margin: ($entryHeight * 0.25) ($entryHeight * 0.14)
+      @media only screen and (max-width: $break-small)
+        font-size: $entryHeight * 0.4
+        margin: ($entryHeight * 0.3) ($entryHeight * 0.15)
+.tito-ticket-price
+  float: left
+  span
+    height $entryHeight
+    padding $calculated-padding 0
 
+
+$input-font-size = 16px
 .tito-ticket-quantity-field
   background-color #fff
   border 1px solid #ccc
   border-radius 4px
   box-shadow inset 0 1px 1px rgba(0, 0, 0, .075)
   display inline-block
-  font-size 14px
-  height 34px
+  font-size $input-font-size
+  height $entryHeight * 0.75
   line-height 1.42857143
-  margin 5px 0
-  padding 6px 12px
+  margin (($entryHeight * 0.25) * 0.5) 0
+  padding (($entryHeight * 0.5) - $input-font-size) * 0.5
   text-align center
   width 45px
+  &:hover
+    background-color: lighten($purple-light, $hoverBackgroundLighten)
+  &:focus
+    background-color: lighten($purple-light, $hoverBackgroundLighten)
+    border-color: saturate($purple-light, $hoverSaturate)
+    outline-width: 0
 
 .tito-ticket-donation-field
   background-color #fff
@@ -109,20 +160,21 @@
   font-size 10px
   padding-bottom 5px
 
-.btn.btn-default,
 .tito-ticket-status span
-  background #ccc
-  border-radius 4px
-  color #333
+  background $creme
+  color $blue-dark
+  font-size $font-size-body
   display inline-block
-  font-size 14px
-  height 34px
-  line-height 1.42857143
+  line-height 100%
   margin 5px 0
-  padding 6px 12px
+  padding $calculated-padding
   text-align center
+  vertical-align middle
   text-decoration none
-  width 100px
+  width $tail-width
+  @media only screen and (max-width: $break-small)
+    font-size $font-size-body * 0.6
+    width $tail-width-small
 
 .btn
   &.btn-default
@@ -161,20 +213,21 @@
   text-align right
 
 .tito-submit
-  background #fff
-  border 1px solid #ccc
-  border-radius 4px
+  background: desaturate(lighten($purple-light, $hoverBackgroundLighten), $hoverDesaturateBack)
+  border: 1px solid $purple-light
   color #333
   cursor pointer
-  font-size 14px
-  height 34px
-  line-height 1.42857143
+  font-size $font-size-body
+  height $entryHeight
   margin 0
-  padding 6px 12px
   text-align center
-  width 100px
+  width $tail-width
+  vertical-align middle
   &:hover
-    border-color #333
+    background-color: lighten($purple-light, $hoverBackgroundLighten)
+    border-color: saturate($purple-light, $hoverSaturate)
+  @media only screen and (max-width: $break-small)
+    width 100%
 
 .tito-ticket.tito-locked-ticket label,
 .tito-ticket.tito-locked-ticket span
