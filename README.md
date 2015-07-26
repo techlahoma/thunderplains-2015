@@ -6,7 +6,7 @@
 The site:
 
 ## :zap: [Thunder Plains 2015](http://2015.thunderplainsconf.com) :zap:
-### :ticket:
+### :ticket: Purchase a Ticket
 Tickets are on sale! [Purchase them here, on ti.to](https://ti.to/techlahoma/thunderplains-2015)
 
 ### :sparkling_heart:: Help us make Thunder Plains Amazing!
