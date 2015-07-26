@@ -36,7 +36,7 @@ Ashley Williams       | If you wish to learn ES6/2015 from scratch, you must fir
 Blaine Bubblitz       | Maybe We Should Slow Down                                                      | 10              | 3:30pm  | :movie_camera:
 Brian Blocker         | Not Rewriting Your Web App (at once)                                           | 8               | 1:00pm  | :movie_camera:
 Greg Tatum            | WebGL Now and Future                                                           | 8               | 9:30am  | :movie_camera:
-                      |                                                                                | 8               | 10:30   | :movie_camera:
+Jakub Jedryszek       | Aurelia – Nex Gen js framework                                                 | 8               | 10:30   | :movie_camera:
 Jenna Zeigen          | Server Farm to Table (Or How the Internet Works)                               | 10              | 9:30am  | :movie_camera:
 Jonathan-David Dalton | Unorthodox Performance                                                         | 10              | 1:00pm  | :movie_camera:
 Jonathan Yarbor       | Using Node.js to Build your Transport Layer                                    | 9               | 9:30am  | :movie_camera:
