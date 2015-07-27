@@ -64,3 +64,10 @@ Our Code of Conduct (anti-harassment policy) is located at [here](http://bit.ly/
 [Twitter - @ThunderPlains](https://twitter.com/thunderplains)
 
 [info@thunderplainsconf.com](mailto:info@thunderplainsconf.com)
+
+#### :tada: Organizers
+We hope to see you there! 
+
+![Thunderplains Organizers](./readme/jesse_amanda_vance.png)
+
+[Jesse Harlin](https://twitter.com/5imian) / [Amanda Harlin](https://twitter.com/amandaharlin) / [Vance Lucas](https://twitter.com/vlucas)
