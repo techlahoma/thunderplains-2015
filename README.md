@@ -33,7 +33,7 @@ Located at the Cox Convention Center in downtown Oklahoma City
 Speaker               | Topic                                                                          | Room            | Time    | Video
 --------------------- | ------------------------------------------------------------------------------ | --------------- | ------- | --------------
 Ashley Williams       | If you wish to learn ES6/2015 from scratch, you must first invent the universe | opening keynote | 9:00am  | :movie_camera:
-Blaine Bubblitz       | Maybe We Should Slow Down                                                      | 10              | 3:30pm  | :movie_camera:
+Blaine Bublitz        | Maybe We Should Slow Down                                                      | 10              | 3:30pm  | :movie_camera:
 Brian Blocker         | Not Rewriting Your Web App (at once)                                           | 8               | 1:00pm  | :movie_camera:
 Greg Tatum            | WebGL Now and Future                                                           | 8               | 9:30am  | :movie_camera:
 Jakub Jedryszek       | Aurelia – Nex Gen js framework                                                 | 8               | 10:30   | :movie_camera:
