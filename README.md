@@ -21,7 +21,7 @@ Herd         | 135   | This is for groups larger than 5, through Nov 2nd
 Tickets include food/snacks/non-alcoholic drinks at lunch time (11:30am-1pm), snack break (3-3:30pm) and at the optional after party (6:30-9pm). (After party attendance is completely optional and not required.)
 
 ### :sparkling_heart:: Help us make Thunder Plains Amazing!
-Interested in Sponsoring Thunder Plains? Check out the [Sponsorship Prospectus](files/ThunderPlainsSponsorshipProspectus2015.pdf). If you have any questions, please feel free to contact us via [email](mailto:info@thunderplainsconf.com) or @ThunderPlainson twitter.
+Interested in Sponsoring Thunder Plains? Check out the [Sponsorship Prospectus](files/ThunderPlainsSponsorshipProspectus2015.pdf). If you have any questions, please feel free to contact us via [email](mailto:info@thunderplainsconf.com) or @ThunderPlains on twitter.
 
 ### :globe_with_meridians: Location
 Located at the Cox Convention Center in downtown Oklahoma City
@@ -42,7 +42,7 @@ Jonathan-David Dalton | Unorthodox Performance                                  
 Jonathan Yarbor       | Using Node.js to Build your Transport Layer                                    | 9               | 9:30am  | :movie_camera:
 Jordan Garcia         | Building Games with React + Immutable + Flux                                   | 10              | 10:30am | :movie_camera:
 Joshua Ogle           | Rapid Prototyping with Product Design Sprints                                  | 9               | 10:30am | :movie_camera:
-Ken-Dale              | Writing Better jQuery infused Javascript                                       | 8               | 1:30pm  | :movie_camera:
+Ken Dale              | Writing Better jQuery Infused JavaScript                                       | 8               | 1:30pm  | :movie_camera:
 Kyle-Simpson          | Breaking The Broken Web                                                        | keynote         | 4:30pm  | :movie_camera:
                       |                                                                                | 8               | 2:00pm  | :movie_camera:
 Mariko Kosaka         | World Wide Web Without …English                                                | 10              | 2:00pm  | :movie_camera:
@@ -66,7 +66,7 @@ Our Code of Conduct (anti-harassment policy) is located at [here](http://bit.ly/
 [info@thunderplainsconf.com](mailto:info@thunderplainsconf.com)
 
 #### :tada: Organizers
-We hope to see you there! 
+We hope to see you there!
 
 ![Thunderplains Organizers](./readme/jesse_amanda_vance.png)
 
