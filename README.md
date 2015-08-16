@@ -21,7 +21,7 @@ Herd         | 135   | This is for groups larger than 5, through Nov 2nd
 Tickets include food/snacks/non-alcoholic drinks at lunch time (11:30am-1pm), snack break (3-3:30pm) and at the optional after party (6:30-9pm). (After party attendance is completely optional and not required.)
 
 ### :sparkling_heart:: Help us make Thunder Plains Amazing!
-Interested in Sponsoring Thunder Plains? Check out the [Sponsorship Prospectus](files/ThunderPlainsSponsorshipProspectus2015.pdf). If you have any questions, please feel free to contact us via [email](mailto:info@thunderplainsconf.com) or @ThunderPlainson twitter.
+Interested in Sponsoring Thunder Plains? Check out the [Sponsorship Prospectus](files/ThunderPlainsSponsorshipProspectus2015.pdf). If you have any questions, please feel free to contact us via [email](mailto:info@thunderplainsconf.com) or @ThunderPlains on twitter.
 
 ### :globe_with_meridians: Location
 Located at the Cox Convention Center in downtown Oklahoma City
