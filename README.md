@@ -42,7 +42,7 @@ Jonathan-David Dalton | Unorthodox Performance                                  
 Jonathan Yarbor       | Using Node.js to Build your Transport Layer                                    | 9               | 9:30am  | :movie_camera:
 Jordan Garcia         | Building Games with React + Immutable + Flux                                   | 10              | 10:30am | :movie_camera:
 Joshua Ogle           | Rapid Prototyping with Product Design Sprints                                  | 9               | 10:30am | :movie_camera:
-Ken-Dale              | Writing Better jQuery infused Javascript                                       | 8               | 1:30pm  | :movie_camera:
+Ken-Dale              | Writing Better jQuery Infused JavaScript                                       | 8               | 1:30pm  | :movie_camera:
 Kyle-Simpson          | Breaking The Broken Web                                                        | keynote         | 4:30pm  | :movie_camera:
                       |                                                                                | 8               | 2:00pm  | :movie_camera:
 Mariko Kosaka         | World Wide Web Without …English                                                | 10              | 2:00pm  | :movie_camera:
