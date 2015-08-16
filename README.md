@@ -66,7 +66,7 @@ Our Code of Conduct (anti-harassment policy) is located at [here](http://bit.ly/
 [info@thunderplainsconf.com](mailto:info@thunderplainsconf.com)
 
 #### :tada: Organizers
-We hope to see you there! 
+We hope to see you there!
 
 ![Thunderplains Organizers](./readme/jesse_amanda_vance.png)
 
