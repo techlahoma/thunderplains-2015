@@ -1,0 +1,18 @@
+.schedule-talk
+  .schedule-title
+    img(src="speakers/iheanyi-ekechukwu/headshot.jpg", alt="Iheanyi Ekechukwu")
+    h3 Intro to Ember.js and Ember-CLI
+    h4 Iheanyi Ekechukwu
+
+  ul.nav.nav-tabs(role="tablist")
+    li.nav-room1.active
+      a(role="tab", data-toggle="tab", href="#Ekechukwu-talk") Talk
+    li.nav-room1
+      a(role="tab", data-toggle="tab", href="#Ekechukwu-bio") Bio
+  div.tab-content
+    div.tab-pane.active(id="Ekechukwu-talk")
+      p
+        include description.jade
+    div.tab-pane(id="Ekechukwu-bio")
+      p
+        include bio.jade
